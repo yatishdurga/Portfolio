@@ -1,0 +1,1083 @@
+/* CSS for Responsive Portfolio */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    overflow-x: hidden;
+}
+
+/* CSS for Background with Selected Gradient Colors */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #59D3FC, #554DDE);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Additional Styling */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 80px;
+    padding: 0rem;
+}
+
+.section-title {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* CSS for Home Section */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    overflow-x: hidden;
+}
+
+/* Home Section */
+/*.home-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #ffffff;
+    margin-top: 50px;
+}*/
+
+.home-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #ffffff;
+    margin-top: 50px;
+
+    /* Add smooth edges */
+    border-radius: 15px;
+
+    /* Add subtle shadow for a smooth appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Transition effect for smoothness */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect to enhance interactivity */
+.home-section:hover {
+    transform: translateY(-5px); /* Slight elevation */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+
+/* Home Content */
+.home-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.home-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.home-roles {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.download-cv {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+    background-color: #008c9e;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+    transform: scale(1.2);
+}
+
+/* Home Photo */
+.home-photo {
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Home Section */
+@media screen and (max-width: 600px) {
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-photo {
+        margin-top: 100px;
+    }
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .career-trajectory {
+        height: 300px;
+    }
+
+    .job-marker {
+        width: 15px;
+        height: 15px;
+    }
+
+    .job-info {
+        font-size: 0.9rem;
+    }
+}
+/* CSS for Experience Section */
+
+/* Section Title */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #111;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 0rem 0;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid #00bcd4;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background: #00bcd4;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.timeline-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.timeline-content ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .timeline {
+        padding-left: 1rem;
+    }
+
+    .timeline-item {
+        padding-left: 1.5rem;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+    }
+}
+/* CSS for Experience Section Timeline Mapping */
+
+.timeline-mapping {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeline-bar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.timeline-fill {
+    position: absolute;
+    height: 100%;
+    background: #00bcd4;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.timeline-dates {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 1rem 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mobile-menu-icon span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+
+
+/* Projects Section Styling */
+.projects-section {
+    padding: 2rem 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Category Buttons */
+.category-buttons {
+    margin-bottom: 1.5rem;
+}
+
+.category-button {
+    padding: 0.7rem 1.5rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #59D3FC;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.category-button:hover {
+    background: #554DDE;
+    transform: scale(1.05);
+}
+
+.category-button.active {
+    background: #554DDE;
+    font-weight: bold;
+}
+
+/* Project Cards */
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1rem;
+    text-align: left;
+}
+
+.project-content h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.project-link {
+    color: #554DDE;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #59D3FC;
+}
+
+/* CSS for Projects Section */
+
+
+.projects-section {
+    padding: 2rem 0; /* Adjust padding for better spacing */
+    background: #f9f9f9;
+
+    /* Add smooth edges */
+    border-radius: 15px;
+
+    /* Add a subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Add smooth transition for hover effects */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional: Add hover effect for interactivity */
+.projects-section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.project-image {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.project-link:hover {
+    background: #008c9e;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* CSS for Certifications Section */
+
+.certifications-section {
+    padding: 2rem 0;
+    background: #f9f9f9;
+    border-radius: 15px;
+}
+
+.certification-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.certification-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certification-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.certification-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.certification-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.certification-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.certification-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.certification-link:hover {
+    background: #008c9e;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .certification-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* CSS for Medium Blogs Section */
+
+.blogs-section {
+    padding: 2rem 0;
+    background: #f9f9f9;
+    border-radius: 20px;
+}
+
+.blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.blog-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.blog-link:hover {
+    background: #008c9e;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .blog-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* CSS for Contact Me Section */
+
+.contact-section {
+    padding: 2rem 0;
+    background: #f9f9f9;
+    border-radius: 20px;
+}
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, #00bcd4, #008c9e);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.contact-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-link {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #e0e0e0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Main Content */
+.content {
+    margin-left: 250px;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        transform: translateY(-100%);
+        position: fixed;
+    }
+
+    .navbar.active {
+        transform: translateY(0);
+    }
+
+    .mobile-menu-icon {
+        display: flex;
+    }
+
+    .content {
+        margin-left: 0;
+        padding-top: 3rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+/*nav bar for mobile */
+/* CSS for Responsive Portfolio */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #111;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: flex-start; /* Align items to the left */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Navbar Logo */
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem; /* Add spacing between logo and links */
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 1rem; /* Add spacing between links */
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00bcd4; /* Highlight color on hover */
+}
+
+/* Navigation Bar */
+/* .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+}*/
+
+/* Base Button Styling */
+.nav-button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(135deg, #59D3FC, #554DDE);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    outline: none;
+}
+/* Hover Effects */
+.nav-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #554DDE, #59D3FC); /* Reverse gradient */
+}
+
+/* Inner Link Styling */
+.nav-button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%; /* Ensures link takes full button width */
+    text-align: center;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .nav-button {
+        width: 100%; /* Make buttons fill the width on smaller screens */
+    }
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-links li {
+    margin: 1rem 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mobile-menu-icon span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+
+/* Main Content */
+.content {
+    margin-left: 150px;
+    margin-top: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        transform: translateY(-100%);
+        position: fixed;
+    }
+
+    .navbar.active {
+        transform: translateY(0);
+    }
+
+    .mobile-menu-icon {
+        display: flex;
+    }
+
+    .content {
+        margin-left: 0;
+        padding-top: 3rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
