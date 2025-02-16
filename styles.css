@@ -1,6 +1,171 @@
-/* CSS for Responsive Portfolio */
+/* Profile Section */
+
+/* Profile Picture */
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    color: white;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+/* Name and Job Title */
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
+}
+
+.job-title {
+    font-size: 1rem;
+    color: #5271ff;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Sidebar Styling */
+.sidebar {
+    width: 260px; /* Slightly wider for better spacing */
+    height: 100vh;
+    background: #A9A9A9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+
+    /* Border with Gradient */
+    border: 8px solid;
+    border-image-source: linear-gradient(180deg, white, white);
+    border-image-slice: 1;
+    border-radius: 20px; /* Rounded corners */
+}
+
 
 /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+
+/* Profile Picture */
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Name and Job Title */
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+}
+
+.job-title {
+    font-size: 1rem;
+    color: #5271ff;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-menu a {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #5271ff;
+}
+
+.highlight {
+    color: #5271ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem 0;
+        position: relative;
+    }
+
+    .profile {
+        display: none; /* Hide profile details on smaller screens */
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .social-icons {
+        margin-top: 0;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -148,20 +313,40 @@ body {
     background-color: #008c9e;
 }
 
+
+.experience-links{
+    margin-top: 1.5rem;
+
+}
+.experience-links a {
+    margin-right: 1rem;
+    display: inline-block;
+
+}
+.experience-logo{
+    width: 120px;
+    height: 100px;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+
+}
 /* Social Links */
 .social-links {
     margin-top: 1.5rem;
+   
 }
 
 .social-links a {
     margin-right: 1rem;
     display: inline-block;
+   
 }
 
 .social-logo {
     width: 30px;
     height: 30px;
     transition: transform 0.3s ease;
+    border-radius: 10px;
 }
 
 .social-logo:hover {
@@ -358,24 +543,30 @@ body {
     margin-bottom: 2rem;
 }
 
+/* Style for Navigation Links */
 .nav-links {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 .nav-links li {
-    margin: 1rem 0;
+    margin: 10px 0; /* Space between links */
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
     font-size: 1rem;
-    transition: color 0.3s;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px; /* Space for underline */
 }
 
+/* Hover Effect - Underline */
 .nav-links a:hover {
-    color: #00bcd4;
+    border-bottom: 2px solid #00C6FF; /* Underline with blue gradient color */
+    color: #080e10; /* Change text color on hover */
 }
 
 .mobile-menu-icon {
@@ -892,47 +1083,6 @@ body {
     margin-bottom: 2rem; /* Add spacing between logo and links */
 }
 
-/* Navbar Links */
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Stack links vertically */
-    gap: 1rem; /* Add spacing between links */
-}
-
-.nav-links li {
-    margin: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #00bcd4; /* Highlight color on hover */
-}
-
-/* Navigation Bar */
-/* .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background: #111;
-    color: #fff;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease-in-out;
-}*/
-
 /* Base Button Styling */
 .nav-button {
     display: inline-block;
@@ -975,26 +1125,6 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 10px;
-}
-
-.nav-links li {
-    margin: 1rem 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #00bcd4;
 }
 
 .mobile-menu-icon {
