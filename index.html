@@ -8,7 +8,6 @@
     <script defer src="scripts.js"></script>
 </head>
 <body>
-
         <!-- Social Links -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/yatish-durga-22b424197/" target="_blank">
@@ -50,7 +49,7 @@
         <section id="home" class="home-section">
             <div class="home-content">
                 <h2 class="home-name">Hi, I'm</h2>
-                <h1 class="home-name">Yatish Durga Appanapalli</h1>
+                <h1 class="home-name">Yatish Durga</h1>
                 <p class="home-roles">Data Engineer| Aspiring Data Scientist</p>
                 <a href="https://publuu.com/flip-book/750007/1663057" class="download-cv" download>Download CV</a>
                 <div class="social-links">
@@ -117,32 +116,300 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-cards">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="Images/Netflix image.png" alt="Project 1" class="project-image">
-                    <div class="project-content">
-                        <h3>SQL - Netflix Data Analysis </h3>
-                        <p>Including trends in movies, TV shows, regional content distribution, and genre popularity. 
-                            The goal is to leverage SQL to perform detailed analysis that could guide business decisions for content strategies, regional investments, and audience engagement.
 
-                        </p>
-                        <a href="https://github.com/yatishdurga/Netflix-Data-Analysis-Project" target="_blank" class="project-link">View on GitHub</a>
-                    </div>
+        
+        <title>Portfolio Projects</title>
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #5FBCD3;
+            --dark-color: #333;
+            --light-color: #f4f7fb;
+            --border-radius: 8px;
+            --box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e8f0fe;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        /* Filter Buttons */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            background-color: white;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+
+        .filter-btn:hover {
+            background-color: rgba(74, 144, 226, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 projects per row by default */
+            gap: 30px;
+            }
+
+        .project-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 77%;
+         
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .project-img {
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-img img {
+            transform: scale(1.05);
+        }
+
+        .project-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+
+        .project-description {
+            color: #666;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .project-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 25px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        .project-btn:hover {
+            background-color: #4A9FB5;
+            transform: translateY(-2px);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @media (max-width: 1024px) {
+             .projects-grid {
+              grid-template-columns: repeat(2, 1fr); /* 2 projects per row on medium screens */
+            }
+            }
+
+        @media (max-width: 600px) {
+              .projects-grid {
+                grid-template-columns: 1fr; /* 1 project per row on small screens */
+            }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Projects</h1>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="excel">Excel</button>
+            <button class="filter-btn" data-filter="sql">SQL</button>
+            <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        </div>
+        
+        <!-- Projects Grid -->
+
+        
+        <div class="projects-grid">
+            <!-- SQL Project -->
+            <div class="project-card" data-category="sql">
+                <div class="project-img">
+                    <img src="/Portfolio/Images/Netflix image.png" alt="Netflix Data Analysis">
                 </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="Images/movie recommendations .jpeg" alt="Project 2" class="project-image">
-                    <div class="project-content">
-                        <h3>Machine Learning - Movie Recommendation </h3>
-                        <p> Project is a movie recommendation system that suggests movies based on user preferences. </p>
-                        <a href="https://github.com/yatishdurga/Movie_Recommendation_System_Using_Machine_Learning.ipynb" target="_blank" class="project-link">View on GitHub</a>
-                    </div>
+                <div class="project-content">
+                    <h3 class="project-title">SQL - Netflix Data Analysis</h3>
+                    <p class="project-description">
+                        Including trends in movies, TV shows, regional content distribution, and genre popularity.
+                    </p>
+                    <a href="https://github.com/yatishdurga/Netflix-Data-Analysis-Project" class="project-btn">View on GitHub</a>
                 </div>
-                
-        </section>
+            </div>
+            
+            <!-- ML Project -->
+            <div class="project-card" data-category="ml">
+                <div class="project-img">
+                    <img src="/Portfolio/Images/movie recommendations .jpeg" alt="Movie Recommendation">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Machine Learning - Movie Recommendation</h3>
+                    <p class="project-description">
+                        A movie recommendation system that suggests movies based on user preferences.
+                    </p>
+                    <a href="https://github.com/yatishdurga/Movie_Recommendation_System_Using_Machine_Learning.ipynb" class="project-btn">View on GitHub</a>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="ml">
+                <div class="project-img">
+                    <img src="/Portfolio/Images/Bike rental Linear regression.png" alt="Movie Recommendation">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Bike Rental Prediction using Linear Regression
+                    </h3>
+                    <p class="project-description">Predicting bike rental demand based on weather, temperature.
+                    </p>
+                    <a href="https://github.com/yatishdurga/Machine-learning/blob/main/05_02b.ipynb" class="project-btn">View on GitHub</a>
+                </div>
+            </div>
+            <!-- Excel Project -->
+            <div class="project-card" data-category="excel">
+                <div class="project-img">
+                    <img src="https://img.freepik.com/free-vector/business-data-analysis-visualization-dashboard_24172-3.jpg" alt="Sales Dashboard">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Excel - Sales Performance Dashboard</h3>
+                    <p class="project-description">
+                        Comprehensive sales analytics dashboard using Excel with pivot tables, conditional formatting, and dynamic charts to visualize KPIs and regional performance metrics.
+                    </p>
+                    <a href="#" class="project-btn">View on GitHub</a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <script>
+        // Project Filtering Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            // Filter function
+            function filterProjects(category) {
+                projectCards.forEach(card => {
+                    // First hide all cards and remove animation class
+                    card.classList.add('hidden');
+                    card.classList.remove('fade-in');
+                    
+                    // Show cards matching the selected category
+                    if (category === 'all' || card.dataset.category === category) {
+                        setTimeout(() => {
+                            card.classList.remove('hidden');
+                            card.classList.add('fade-in');
+                        }, 10);
+                    }
+                });
+            }
+            
+            // Add click event to filter buttons
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get the filter category
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter projects
+                    filterProjects(filterValue);
+                });
+            });
+            
+            // Initialize with all projects visible
+            filterProjects('all');
+        });
+    </script>
          <!-- Certifications Section -->
          <section id="certifications" class="certifications-section">
             <h2 class="section-title">Certifications</h2>
