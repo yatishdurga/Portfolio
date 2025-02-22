@@ -28,10 +28,11 @@
             <ul class="nav-links">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#experience">EXPERIENCE</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#certifications">CERTIFICATIONS</a></li>
                 <li><a href="#blogs">MEDIUMBLOGS</a></li>
-                <li><a href="#contact">CONTACT ME</a></li>            
+                <li><a href="#contact">CONTACT ME</a></li>        
             </ul>            
         <div class="social-links">
             <a href="https://www.linkedin.com/in/yatish-durga-22b424197/" target="_blank"><img src="Images/Linkedin logo.png" alt="LinkedIn" class="social-logo"></a>
@@ -77,12 +78,12 @@
                 <!-- Graduate Student Employee -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Graduate Student Employee</h3>
-                        <p><strong>JCKL Library, University of Central Missouri</strong> | May 2024 – Present</p>
+                        <h3>Research Assistant </h3>
+                        <p><strong>University of Central Missouri</strong> | Jan 2024 – Present</p>
                         <ul>
-                            <li>Managed library database systems and performed cataloging tasks.</li>
-                            <li>Leveraged advanced reporting tools for data analysis using Excel.</li>
-                            <li>Guided students using problem-solving methodologies.</li>
+                            <li>Working on heartbeat classification research using machine learning, LLMs traning,</li>
+                            <li>deep learning, assisting in data processing, model training,</li>
+                            <li> and performance evaluation for disease detection.</li>
                         </ul>
                     </div>
                 </div>
@@ -116,196 +117,215 @@
         </section>
 
         <!-- Projects Section -->
-
-        
-        <title>Portfolio Projects</title>
-    <style>
-        :root {
-            --primary-color: #4A90E2;
-            --secondary-color: #5FBCD3;
-            --dark-color: #333;
-            --light-color: #f4f7fb;
-            --border-radius: 8px;
-            --box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
+         <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e8f0fe;
-            color: var(--dark-color);
-            line-height: 1.6;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px;
         }
 
-        h1 {
+        .education-title {
             text-align: center;
             font-size: 2.5rem;
-            margin-bottom: 40px;
-            font-weight: 700;
-        }
-
-        /* Filter Buttons */
-        .filter-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
+            color: #333;
             margin-bottom: 40px;
         }
 
-        .filter-btn {
-            background-color: white;
-            border: 2px solid var(--primary-color);
-            color: var(--primary-color);
-            padding: 10px 20px;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 16px;
-        }
-
-        .filter-btn:hover {
-            background-color: rgba(74, 144, 226, 0.1);
-            transform: translateY(-2px);
-        }
-
-        .filter-btn.active {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        /* Projects Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 projects per row by default */
-            gap: 30px;
-            }
-
-        .project-card {
-            background-color: white;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--box-shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: 77%;
-         
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-
-        .project-img {
-            height: 180px;
-            overflow: hidden;
-        }
-
-        .project-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .project-card:hover .project-img img {
-            transform: scale(1.05);
-        }
-
-        .project-content {
-            padding: 25px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .project-title {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            font-weight: 700;
-            color: var(--dark-color);
-        }
-
-        .project-description {
-            color: #666;
+        .education-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
-            flex-grow: 1;
+            margin-left: 40px;
+            overflow: hidden;
         }
 
-        .project-btn {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 10px 25px;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            text-align: center;
-            border: none;
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
             cursor: pointer;
         }
 
-        .project-btn:hover {
-            background-color: #4A9FB5;
-            transform: translateY(-2px);
+        .school-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
 
-        .hidden {
-            display: none;
+        .school-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
         }
 
-        /* Animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        .school-name {
+            font-size: 1.5rem;
+            color: #333;
         }
 
-        .fade-in {
-            animation: fadeIn 0.5s ease forwards;
+        .expand-btn {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #2196F3;
+            border-radius: 50%;
+            background: white;
+            color: #2196F3;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        @media (max-width: 1024px) {
-             .projects-grid {
-              grid-template-columns: repeat(2, 1fr); /* 2 projects per row on medium screens */
-            }
+        .expand-btn.active {
+            transform: rotate(45deg);
+            background: #2196F3;
+            color: white;
+        }
+
+        .card-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: white;
+        }
+
+        .card-content.active {
+            max-height: 300px;
+        }
+
+        .education-details {
+            padding: 0 20px 20px;
+        }
+
+        .degree {
+            font-size: 1.2rem;
+            color: #2196F3;
+            margin-bottom: 10px;
+        }
+
+        .duration {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
             }
 
-        @media (max-width: 600px) {
-              .projects-grid {
-                grid-template-columns: 1fr; /* 1 project per row on small screens */
+            .education-title {
+                font-size: 2rem;
+                margin-bottom: 30px;
             }
+
+            .school-logo {
+                width: 60px;
+                height: 60px;
             }
+
+            .school-name {
+                font-size: 1.2rem;
+            }
+
+            .school-info {
+                gap: 15px;
+            }
+
+            .expand-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 20px;
+            }
+        }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Projects</h1>
+    <div id="education" class="container">
+        <h1 class="education-title">Education</h1>
         
+        <div class="education-card">
+            <div class="card-header">
+                <div class="school-info">
+                    <img src="/Portfolio/Images/ucmo logo.jpg" alt="University Logo" class="school-logo">
+                    <h2 class="school-name">Masters in Data Science and AI</h2>
+                </div>
+                <button class="expand-btn">+</button>
+            </div>
+            <div class="card-content">
+                <div class="education-details">
+                    <h3 class="degree">University Of Central Missouri,Lee Summit,USA</h3>
+                    <p class="duration">January 2024 - December 2025</p>
+                    <p class="description">
+                        Currently pursuing advanced studies in Data Science and Artificial Intelligence, 
+                        focusing on machine learning, deep learning, and data analytics.
+                    </p>
+                    <p><b>Research Assistant:</b> Working on heartbeat classification research using machine learning, LLMs(llama) traning,
+                    deep learning, assisting in data processing, model training, and performance evaluation for disease detection.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-card">
+            <div class="card-header">
+                <div class="school-info">
+                    <img src="/Portfolio//Images/gtu logo.png" alt="GTU Logo" class="school-logo">
+                    <h2 class="school-name">Gujarat Technological University</h2>
+                </div>
+                <button class="expand-btn">+</button>
+            </div>
+            <div class="card-content">
+                <div class="education-details">
+                    <h3 class="degree">Bachelor of Engineering in Mechanical Engineering</h3>
+                    <p class="duration">2017 - 2021</p>
+                    <p class="description">
+                        Completed Bachelor's degree in Mechanical Engineering with a focus on 
+                        design, thermodynamics, and manufacturing processes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.card-header').forEach(header => {
+            header.addEventListener('click', () => {
+                // Get the content and button elements
+                const content = header.nextElementSibling;
+                const button = header.querySelector('.expand-btn');
+                
+                // Toggle active classes
+                content.classList.toggle('active');
+                button.classList.toggle('active');
+            });
+        });
+    </script>
+   <div id="projects"  class="container">
+        <h1 >Projects</h1>
         <!-- Filter Buttons -->
-        <div class="filter-container">
+        <div id="projects" class="filter-container">
             <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="excel">Excel</button>
             <button class="filter-btn" data-filter="sql">SQL</button>
             <button class="filter-btn" data-filter="ml">Machine Learning</button>
         </div>
         
         <!-- Projects Grid -->
-
-        
         <div class="projects-grid">
             <!-- SQL Project -->
             <div class="project-card" data-category="sql">
@@ -347,6 +367,20 @@
                     <a href="https://github.com/yatishdurga/Machine-learning/blob/main/05_02b.ipynb" class="project-btn">View on GitHub</a>
                 </div>
             </div>
+            <!-- Excel Project -->
+            <div class="project-card" data-category="excel">
+                <div class="project-img">
+                    <img src="https://img.freepik.com/free-vector/business-data-analysis-visualization-dashboard_24172-3.jpg" alt="Sales Dashboard">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Excel - Sales Performance Dashboard</h3>
+                    <p class="project-description">
+                        Comprehensive sales analytics dashboard using Excel with pivot tables, conditional formatting, and dynamic charts to visualize KPIs and regional performance metrics.
+                    </p>
+                    <a href="#" class="project-btn">View on GitHub</a>
+                </div>
+            </div>
+            
             
         </div>
     </div>
