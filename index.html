@@ -329,83 +329,78 @@
             });
         });
     </script>
-   <div id="projects"  class="container">
-        <h1 >Projects</h1>
-        <!-- Filter Buttons -->
-        <div id="projects" class="filter-container">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="excel">Excel</button>
-            <button class="filter-btn" data-filter="sql">SQL</button>
-            <button class="filter-btn" data-filter="ml">Machine Learning</button>
+   <div id="projects" class="container">
+    <h1 class="education-title">Projects</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="excel">Excel</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+        <!-- SQL Project -->
+        <div class="project-card" data-category="sql">
+            <div class="project-img">
+                <img src="/Portfolio/Images/Netflix image.png" alt="Netflix Data Analysis">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">SQL - Netflix Data Analysis</h3>
+                <p class="project-description">Trends in movies, TV shows, regional content, and genre popularity.</p>
+                <a href="https://github.com/yatishdurga/Netflix-Data-Analysis-Project" class="project-btn">View on GitHub</a>
+            </div>
         </div>
-        <!-- Projects Grid -->
-            <!-- SQL Project -->
-            <div class="project-card" data-category="sql">
-                <div class="project-img">
-                    <img src="/Portfolio/Images/Netflix image.png" alt="Netflix Data Analysis">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">SQL - Netflix Data Analysis</h3>
-                    <p class="project-description">
-                        Including trends in movies, TV shows, regional content distribution, and genre popularity.
-                    </p>
-                    <a href="https://github.com/yatishdurga/Netflix-Data-Analysis-Project" class="project-btn">View on GitHub</a>
-                </div>
+
+        <!-- ML Project -->
+        <div class="project-card" data-category="ml">
+            <div class="project-img">
+                <img src="/Portfolio/Images/AI Assistant Mental Health.png" alt="Mental Health AI Assistant">
             </div>
-             <!-- ML Project -->
-             <div class="project-card" data-category="sql">
-                <div class="project-img">
-                    <img src="/Portfolio/Images/AI Assistant Mental Health.png" alt="Mental Health AI Assistant">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Mental Health AI Assistant</h3>
-                    <p class="project-description">
-                        AI-powered mental health assistant to deliver personalized support, books, videos, and motivation to 
-                        users.
-                    </p>
-                    <a href="https://github.com/yatishdurga/MentalHealthSolver" class="project-btn">View on GitHub</a>
-                </div>
+            <div class="project-content">
+                <h3 class="project-title">Mental Health AI Assistant</h3>
+                <p class="project-description">Personalized support, books, videos, and motivation to users.</p>
+                <a href="https://github.com/yatishdurga/MentalHealthSolver" class="project-btn">View on GitHub</a>
             </div>
-            <div class="project-card" data-category="ml">
-                <div class="project-img">
-                    <img src="/Portfolio/Images/movie recommendations .jpeg" alt="Movie Recommendation">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Machine Learning - Movie Recommendation</h3>
-                    <p class="project-description">
-                        A movie recommendation system that suggests movies based on user preferences.
-                    </p>
-                    <a href="https://github.com/yatishdurga/Movie_Recommendation_System_Using_Machine_Learning.ipynb" class="project-btn">View on GitHub</a>
-                </div>
+        </div>
+
+        <div class="project-card" data-category="ml">
+            <div class="project-img">
+                <img src="/Portfolio/Images/movie recommendations .jpeg" alt="Movie Recommendation">
             </div>
-            <div class="project-card" data-category="ml">
-                <div class="project-img">
-                    <img src="/Portfolio/Images/Bike rental Linear regression.png" alt="Movie Recommendation">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Bike Rental Prediction using Linear Regression
-                    </h3>
-                    <p class="project-description">Predicting bike rental demand based on weather, temperature.
-                    </p>
-                    <a href="https://github.com/yatishdurga/Machine-learning/blob/main/05_02b.ipynb" class="project-btn">View on GitHub</a>
-                </div>
+            <div class="project-content">
+                <h3 class="project-title">Movie Recommendation System</h3>
+                <p class="project-description">Suggests movies based on user preferences.</p>
+                <a href="https://github.com/yatishdurga/Movie_Recommendation_System_Using_Machine_Learning.ipynb" class="project-btn">View on GitHub</a>
             </div>
-        <div class="projects-grid">
-            <!-- Excel Project -->
-            <div class="project-card" data-category="excel">
-                <div class="project-img">
-                    <img src="https://img.freepik.com/free-vector/business-data-analysis-visualization-dashboard_24172-3.jpg" alt="Sales Dashboard">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Excel - Sales Performance Dashboard</h3>
-                    <p class="project-description">
-                        Comprehensive sales analytics dashboard using Excel with pivot tables, conditional formatting, and dynamic charts to visualize KPIs and regional performance metrics.
-                    </p>
-                    <a href="#" class="project-btn">View on GitHub</a>
-                </div>
-             </div>
+        </div>
+
+        <div class="project-card" data-category="ml">
+            <div class="project-img">
+                <img src="/Portfolio/Images/Bike rental Linear regression.png" alt="Bike Rental Prediction">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Bike Rental Prediction</h3>
+                <p class="project-description">Predicting bike rental demand based on weather, temperature.</p>
+                <a href="https://github.com/yatishdurga/Machine-learning/blob/main/05_02b.ipynb" class="project-btn">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Excel Project -->
+        <div class="project-card" data-category="excel">
+            <div class="project-img">
+                <img src="https://img.freepik.com/free-vector/business-data-analysis-visualization-dashboard_24172-3.jpg" alt="Sales Dashboard">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Sales Dashboard (Excel)</h3>
+                <p class="project-description">Dashboard with pivot tables, charts, and KPIs visualization.</p>
+                <a href="#" class="project-btn">View on GitHub</a>
+            </div>
         </div>
     </div>
+</div>
 
     <script>
         // Project Filtering Functionality
