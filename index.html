@@ -72,6 +72,17 @@
                 <img src="Images/Yatish.jpeg" alt="Your Photo" class="photo">
             </div>
         </section>
+             <!-- Orbit Background -->
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="orbit-ring ring-3"></div>
+        
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-html">HTML5</div>
+          <div class="floating-badge badge-js">JavaScript</div>
+          <div class="floating-badge badge-react">React</div>
+          <div class="floating-badge badge-ask">🤖 Ask AI</div>
+          <div class="floating-badge badge-completed">✅ Completed</div>
 
         <!-- Experience Section -->
         <section id="experience" class="experience-section">
@@ -135,6 +146,56 @@
 
         <!-- Projects Section -->
          <style>
+        /* Orbit Rings */
+    .orbit-ring {
+      position: absolute;
+      border: 1.5px dashed rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      animation: rotate 120s linear infinite;
+    }
+    .ring-1 { width: 400px; height: 400px; }
+    .ring-2 { width: 600px; height: 600px; }
+    .ring-3 { width: 800px; height: 800px; }
+
+    @keyframes rotate {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    /* Floating Badges */
+    .floating-badge {
+      position: absolute;
+      padding: 10px 15px;
+      background: #fff;
+      border-radius: 12px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: float 6s ease-in-out infinite;
+    }
+    .badge-html { top: 10%; left: 30%; }
+    .badge-js { top: 20%; left: 70%; }
+    .badge-react { top: 50%; left: 90%; }
+    .badge-ask { top: 75%; left: 20%; background: #fce4ec; color: #ad1457; }
+    .badge-completed { top: 40%; left: 50%; background: #e8f5e9; color: #2e7d32; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Micro Labels */
+    .micro-label {
+      padding: 4px 10px;
+      font-size: 12px;
+      background-color: #e3f2fd;
+      color: #1565c0;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
         * {
             margin: 0;
             padding: 0;
